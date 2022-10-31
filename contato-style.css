@@ -4,7 +4,111 @@
     margin: 0;
     padding: 0;
     background-color: #000000;
-    font-family: 'Manrope';
+    font-family: 'Manrope', 'Inter', sans-serif;
     color: aliceblue;
+    box-sizing: border-box;
+    
+}
 
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    box-sizing: border-box;
+
+
+}
+
+header{
+    border: 1px solid white;
+    width: 100%;
+    height: 10vh;
+}
+
+footer{
+    border: 1px solid white;
+    width: 100%;
+    height: 10vh;
+}
+
+
+/*Wrapper geral dos elementos*/
+.contato-wrapper{
+    margin: 0%;
+    border: 1px solid white;
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+
+.contato-heading h1{
+    font-size: 3.5rem;
+    color: #D9298A;
+}
+
+/*Elementos do formulário (inputs)*/
+.contato-elemento-form
+{
+    background-color: #D9D9D9;
+    padding: 10px;
+    border-radius: 20px;
+    border-style: none;
+
+    /*Qual a cor que deve ser o texto ao ser digitado?
+    Vou deixar preto por enquanto*/
+    font-weight: 600;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/*Pseudo elemento necessário para mudar a cor do placeholder!*/
+.contato-elemento-form::placeholder{
+    color: #D9298A;
+    font-weight: 700;
+    opacity: 1;
+}
+
+
+.contato-formulario{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 50vh;
+}
+
+.contato-formulario input{
+    width: 100%;
+    margin: 1%;
+}
+
+.contato-formulario form{
+    /*temporário, tirar*/
+    border: 1px solid white;
+    margin: 10px;
+    width: 80%;
+}
+
+.contato-imagem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+}
+
+
+
+
+.contato-imagem img{
+    width: 400px;
+    position: inherit;
+    padding: 1rem;
 }
