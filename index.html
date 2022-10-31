@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/contato-style.css">
+    
+    <!--Lembar de mudar o caminho do stylesheet depois!-->
+    <link rel="stylesheet" href="contato-style.css">
+
     <title>Contato</title>
 </head>
+
 <body>
     <header>Aqui vai o header</header>
     <div class="contato-wrapper">
@@ -15,12 +19,28 @@
         </div>
 
         <div class="contato-formulario">
-            <form action=""></form>
+            <form action="">
+
+                <!--Pensar depois se será necessária uma tag label para cada input do formulário-->
+                <input type="text" id="nome-contato-form contato-elemento-form" placeholder="Nome">
+                
+                <input type="email" id="id-contato-form contato-elemento-form" placeholder="Email">
+                
+                <input type="text" id="assunto-contato-form contato-elemento-form" placeholder="Assunto">
+                
+                <input type="text" name="" id="mensagem-contato-form contato-elemento-form" placeholder="Assunto">
+
+                <button class="contato-formulario-enviar">Enviar</button>
+            </form>
         </div>
-        
+
         <div class="contato-imagem">
             <img src="" alt="Imagem Carvelheira - Creating Memories">
         </div>
+
     </div>
+
+    <footer>Aqui vai o footer</footer>
 </body>
+
 </html>
