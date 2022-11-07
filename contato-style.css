@@ -42,7 +42,6 @@ footer{
 /*Wrapper geral dos elementos*/
 .contato-wrapper{
     margin: 0%;
-    border: 1px solid white;
     width: 80%;
     height: 80vh;
     display: flex;
@@ -82,7 +81,7 @@ footer{
 .contato-elemento-form::placeholder{
     color: #D9298A;
     font-weight: 700;
-    opacity: 0.7;
+    opacity: 1;
 }
 
 
@@ -101,9 +100,25 @@ footer{
     font-size: 1.4rem;
 }
 
+.contato-formulario textarea{
+    width: 100%;
+    margin: 1.2%;
+    height: 15%;
+    font-size: 1.4rem;
+}
+
+#mensagem-teste{
+    height: 150px;
+}
+
+#mensagem-teste::placeholder{
+    position: relative;
+    top: -50px;
+}
+
+
 .contato-formulario form{
     /*temporário, tirar*/
-    border: 1px solid white;
     margin: 10px 20px 10px 0;
     width: 50%;
     height: 100%;
@@ -113,7 +128,6 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid white;
     margin: auto;
     width: 50%;
     margin-top: 10px;
@@ -124,13 +138,8 @@ footer{
     position: inherit;
 }
 
-#mensagem-contato-form{
-    height: 200px;
-    
-}
-#mensagem-contato-form::placeholder{
-    text-align: top;
-}
+
+
 
 
 /* Botão enviar*/
@@ -156,13 +165,16 @@ footer{
 
 
 @media(max-width: 768px){
+    html{
+        font-size: 50%;
+    }
+    
     .contato-formulario{
         flex-direction: column;
     }
 
     .contato-formulario form{
         /*temporário, tirar*/
-        border: 1px solid white;
         margin: 10px 20px 10px 0;
         width: 100%;
         height: 100%;
