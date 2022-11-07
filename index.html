@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!--Lembar de mudar o caminho do stylesheet depois!-->
+    <script src="contato-script.js" defer></script>
     <link rel="stylesheet" href="contato-style.css">
 
     <title>Contato</title>
@@ -21,25 +21,15 @@
         </div>
 
         <div class="contato-formulario">
-            <form action="#">
+            <form action="/" id="form" >
 
                 <!--Pensar depois se será necessária uma tag label para cada input do formulário-->
-                <input type="text" name="Nome" id="nome-contato-form" class="contato-elemento-form" placeholder="Nome">
+                <input type="text" name="Nome" id="nome-contato-form" class="contato-elemento-form" placeholder="Nome" aria-label="Nome" required>
+                <input type="email" name="Email" id="email-contato-form" class="contato-elemento-form" placeholder="Email" aria-label="Email" required>
+                <input type="text" name="Assunto" id="assunto-contato-form" class="contato-elemento-form" placeholder="Assunto" aria-label="Assunto" required>
+                <input type="text" name="Mensagem" id="mensagem-contato-form" class="contato-elemento-form" placeholder="Mensagem" aria-label="Mensagem" required>
+                <button class="contato-formulario-enviar" type="submit">Enviar</button>
                 
-                <input type="email" name="Email" id="id-contato-form" class="contato-elemento-form" placeholder="Email">
-                
-                <input type="text" name="Assunto" id="assunto-contato-form" class="contato-elemento-form" placeholder="Assunto">
-                
-
-                <!--Talvez eu precise colocar uma tag textarea aqui-->
-                <input type="text" name="Mensagem" id="mensagem-teste" class="contato-elemento-form" placeholder="Mensagem">
-                
-                <!--
-                    EXCLUIR ISSO AQUI DEPOIS
-                    <textarea type="text" name="Mensagem" id="mensagem-contato-form" class="contato-elemento-form" placeholder="Mensagem"></textarea>
-                -->
-
-                <button class="contato-formulario-enviar">Enviar</button>
             </form>
             <div class="contato-imagem">
                 <img src="assets/img/creatingMemories.png" alt="Imagem Carvelheira - Creating Memories">

@@ -107,11 +107,11 @@ footer{
     font-size: 1.4rem;
 }
 
-#mensagem-teste{
+#mensagem-contato-form{
     height: 150px;
 }
 
-#mensagem-teste::placeholder{
+#mensagem-contato-form::placeholder{
     position: relative;
     top: -50px;
 }
